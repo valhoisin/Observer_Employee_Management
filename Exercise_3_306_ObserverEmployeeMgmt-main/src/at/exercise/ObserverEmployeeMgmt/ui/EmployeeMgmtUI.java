@@ -7,8 +7,10 @@ import java.util.Scanner;
 
 public class EmployeeMgmtUI {
 
+    private final static EmployeeDB employeeDB = new EmployeeDB();
+
     public static void main(String[] args) {
-        EmployeeDB employeeDB = new EmployeeDB();
+      //  EmployeeDB employeeDB = new EmployeeDB();
         EquipmentDB equipmentDB = new EquipmentDB();
         KeyCardDB keyCardDB = new KeyCardDB();
 

@@ -20,12 +20,6 @@ public class EmployeeDB implements Subject {
 
     @Override
     public void notifyObservers(Employee emp) {
-    /*
-    for (int i = 0; i < observers.size(); i++) {
-       Observer o = observers.get(i);
-       o.employeeAdded(emp);
-    }
-    */
         for (Observer o : observers) {
             o.employeeAdded(emp);
         }
